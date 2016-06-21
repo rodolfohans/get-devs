@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+
+	<body id="body">
+
+		<header>
+			<div>
+				<img src="images/logo-profite.png" alt="">
+			</div>
+		</header>
+
+		<main>
+			<div class="site-container">
+
+				<div>
+					<h1>Vestidos</h1>
+				</div>
+
+				<sidebar>
+					<section class="filter-color">
+						<h3>Cores</h3>
+						<ul>
+							<li>Amarelo</li>
+							<li>Azul</li>
+							<li>Branco</li>
+							<li>Cinza</li>
+							<li>Laranja</li>
+						</ul>
+						<span>Ver todas as cores</span>
+					</section>
+					<section class="filter-size">
+						<h3>Tamanhos</h3>
+						<ul>
+							<li>P</li>
+							<li>M</li>
+							<li>G</li>
+							<li>U</li>
+							<li>36</li>
+							<li>38</li>
+							<li>40</li>
+							<li>42</li>
+							<li>44</li>
+							<li>46</li>
+						</ul>
+					</section>
+					<section class="filter-price">
+						<h3>Faixa de Preço</h3>
+						<ul>
+							<li>de R$ 0 até R$ 50</li>
+							<li>de R$ 51 até R$ 150</li>
+							<li>de R$ 151 até R$ 300</li>
+							<li>de R$ 301 até R$ 500</li>
+							<li>a partir de R$ 501</li>
+						</ul>
+					</section>
+				</sidebar>
+
+				<content>
+					<div id="id01"></div>
+				</content>
+
+			</div> <!-- .site-container -->
+		</main>
+
+		<footer>
+			<div>
+				<span>Profite - CNPJ 05.559.134/0001-60 End: Voluntários da Pátria, 301/702 Botafogo - RJ - 22270-000</span>
+			</div>
+		</footer>
+
+		<script>
+			//var produtos = [
+			//{
+			//"display": "JavaScript Tutorial",
+			//"url": "http://www.w3schools.com/js/default.asp"
+			//},
+			//{
+			//"display": "HTML Tutorial",
+			//"url": "http://www.w3schools.com/html/default.asp"
+			//},
+			//{
+			//"display": "CSS Tutorial",
+			//"url": "http://www.w3schools.com/css/default.asp"
+			//}
+			//]
+
+			/*var xmlhttp = new XMLHttpRequest();
+			var url = "produtos.txt";
+
+			xmlhttp.onreadystatechange = function() {
+				if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					var myArr = JSON.parse(xmlhttp.responseText);
+					callProdutos(myArr);
+				}
+			};
+
+			xmlhttp.open("GET", url, true);
+			xmlhttp.send();
+			
+			function callProdutos(arr) {
+				var out = "";
+				var i;
+				for (i = 0; i < arr.length; i++) {
+					out += '<a href="' + arr[i].url +'">' + arr[i].display + '/></br>';
+				};
+				document.getElementById("id01").innerHTML = out;
+			}*/
+			var xmlhttp = new XMLHttpRequest();
+			var url = "produtos.txt";
+			
+			xmlhttp.onreadystatechange = function() {
+			    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			        var myArr = JSON.parse(xmlhttp.responseText);
+			        myFunction(myArr);
+			    }
+			};
+			xmlhttp.open("GET", url, true);
+			xmlhttp.send();
+			
+			function myFunction(arr) {
+			    var out = "";
+			    var i;
+			    for(i = 0; i < arr.length; i++) {
+			        out += '<a href="' + arr[i].url + '">' +
+			        arr[i].display + '</a><br>';
+			    }
+			    document.getElementById("id01").innerHTML = out;
+			}
+		</script>
+
+	</body>
+</html>

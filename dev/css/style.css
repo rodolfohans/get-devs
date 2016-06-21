@@ -1,0 +1,27 @@
+
+/* --- Reset --- */
+html, body, div, nav, header, section, footer, h1, h2, p, span, small, ul, li, a, a:hover, input {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	color: inherit;
+	font-size: 100%;
+	font: inherit;
+	line-height: 1;
+	list-style: none;
+	text-decoration: none;
+	vertical-align: baseline;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.site-container {
+	width: 100vw;
+	background-color: #FFF;
+}
+
+footer {
+	background-color: #000;
+	color: #FFF;
+}
