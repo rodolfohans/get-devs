@@ -70,5 +70,77 @@
 "vezes": "5",
 "parcela": "30,00",
 "thumbImage": "produto-9"
+},
+{
+"codigo": "001",
+"nome": "Bata Bordada",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-1"
+},
+{
+"codigo": "002",
+"nome": "Chapéu de Praia com Fivela",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-2"
+},
+{
+"codigo": "003",
+"nome": "Vestido Texturizado",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-3"
+},
+{
+"codigo": "004",
+"nome": "Bata Bordada",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-4"
+},
+{
+"codigo": "005",
+"nome": "Chapéu de Praia com Fivela",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-5"
+},
+{
+"codigo": "006",
+"nome": "Vestido Texturizado",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-6"
+},
+{
+"codigo": "007",
+"nome": "Bata Bordada",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-7"
+},
+{
+"codigo": "008",
+"nome": "Chapéu de Praia com Fivela",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-8"
+},
+{
+"codigo": "009",
+"nome": "Vestido Texturizado",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-9"
 }
 ]

@@ -50,7 +50,7 @@ small {
 }
 
 .site-container {
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 }
 
@@ -71,15 +71,43 @@ small {
 	text-align: center;
 }
 
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
 /* --- Cabeçalho --- */
 header {
-	padding: 35px 0;
+	padding: 35px 0 60px;
 	border-bottom: 2px solid #ff9f1c;
 }
 
 header .logo-profite{
 	width: 104px;
 	height: 29px;
+}
+
+.bag-icon {
+	position: relative;
+	padding: 0.3em 0.42em;
+	font-size: 1.2em;
+}
+
+.shop-badge {
+	padding: 3px 0;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	font-size: 0.6em;
+	color: #FFF;
+	border-radius: 100%;
+	background-color: #ff9f1c;
 }
 
 /* --- Sidebar --- */
@@ -291,9 +319,20 @@ footer {
 	}
 }
 
-@media (max-width: 420px) {
-	.sidebar{
+@media (max-width: 768px) {
+	header{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.page-title {
+		text-align: center;
+	}
+	.sidebar {
 		display: none;
+	}
+	.cont-100 {
+		flex: 0 0 100%;
+		-webkit-flex: 0 0 100%;
 	}
 	.cont-75 {
 		flex: 0 0 100%;

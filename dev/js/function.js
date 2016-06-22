@@ -3,7 +3,7 @@ $(document).ready(function inicio() {
 	
 });
 
-var spots = 6;			//quantidade de produtos exibidos na página
+var spots = 9;			//quantidade de produtos exibidos na página
 	prodArr = [];		//array de produtos
 
 function loadProducts() {
@@ -36,6 +36,6 @@ function writeProducts(arr) {
 }
 
 function showMore() {
-	spots = spots + 6;
+	spots = spots + 3;
 	writeProducts(prodArr);
 }
