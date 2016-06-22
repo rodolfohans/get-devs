@@ -4,134 +4,197 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Teste Profit-e - Rodolfo Hans</title>
 		<link rel="stylesheet" href="css/style.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/function.js"></script>
 	</head>
 
 	<body id="body">
 
 		<header>
-			<div>
-				<img src="images/logo-profite.png" alt="">
+			<div class="site-container">
+				<div class="cont-100">
+					<img src="images/logo-profite.png" alt="Profite - E-commerce Solutions" class="logo-profite">
+				</div>	
 			</div>
 		</header>
 
 		<main>
 			<div class="site-container">
 
-				<div>
-					<h1>Vestidos</h1>
+				<div class="flex-wrapper">
+					<div class="cont-100 page-title">
+						<h1>Vestidos</h1>
+					</div>
 				</div>
 
-				<sidebar>
-					<section class="filter-color">
-						<h3>Cores</h3>
-						<ul>
-							<li>Amarelo</li>
-							<li>Azul</li>
-							<li>Branco</li>
-							<li>Cinza</li>
-							<li>Laranja</li>
-						</ul>
-						<span>Ver todas as cores</span>
-					</section>
-					<section class="filter-size">
-						<h3>Tamanhos</h3>
-						<ul>
-							<li>P</li>
-							<li>M</li>
-							<li>G</li>
-							<li>U</li>
-							<li>36</li>
-							<li>38</li>
-							<li>40</li>
-							<li>42</li>
-							<li>44</li>
-							<li>46</li>
-						</ul>
-					</section>
-					<section class="filter-price">
-						<h3>Faixa de Preço</h3>
-						<ul>
-							<li>de R$ 0 até R$ 50</li>
-							<li>de R$ 51 até R$ 150</li>
-							<li>de R$ 151 até R$ 300</li>
-							<li>de R$ 301 até R$ 500</li>
-							<li>a partir de R$ 501</li>
-						</ul>
-					</section>
-				</sidebar>
+				<div class="flex-wrapper">
+					<div class="cont-25 sidebar">
+						<sidebar id="sidebar" class="cont-25">
+							<section id="cor">
+								<h2>Cores</h2>
+								<ul>
+									<li>
+										<input type="radio" id="f-cor-amarelo" name="f-cor" class="radio">
+										<label for="f-cor-amarelo">Amarelo</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-cor-azul" name="f-cor" class="radio">
+										<label for="f-cor-azul">Azul</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-cor-branco" name="f-cor" class="radio">
+										<label for="f-cor-branco">Branco</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-cor-cinza" name="f-cor" class="radio">
+										<label for="f-cor-cinza">Cinza</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-cor-laranja" name="f-cor" class="radio">
+										<label for="f-cor-laranja">Laranja</label>
+										<div class="check"></div>
+									</li>
+								</ul>
+								<span><small>Ver todas as cores <i class="icon-angle-down"></i></small></span>
+							</section>
+							<section class="f-tamanho">
+								<h2>Tamanhos</h2>
+								<ul>
+									<li>
+										<input type="radio" id="f-tamanho-p" name="f-tamanho" class="radio">
+										<label for="f-tamanho-p">P</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-m" name="f-tamanho" class="radio">
+										<label for="f-tamanho-m">M</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-g" name="f-tamanho" class="radio">
+										<label for="f-tamanho-g">G</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-gg" name="f-tamanho" class="radio">
+										<label for="f-tamanho-gg">GG</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-u" name="f-tamanho" class="radio">
+										<label for="f-tamanho-u">U</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-36" name="f-tamanho" class="radio">
+										<label for="f-tamanho-36">36</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-38" name="f-tamanho" class="radio">
+										<label for="f-tamanho-38">38</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-40" name="f-tamanho" class="radio">
+										<label for="f-tamanho-40">40</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-42" name="f-tamanho" class="radio">
+										<label for="f-tamanho-42">42</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-44" name="f-tamanho" class="radio">
+										<label for="f-tamanho-44">44</label>
+									</li>
+									<li>
+										<input type="radio" id="f-tamanho-46" name="f-tamanho" class="radio">
+										<label for="f-tamanho-46" class="check2">46</label>
+									</li>
+									<li>
+										<span></span>
+									</li>
+								</ul>
+							</section>
+							<section>
+								<h2>Faixa de Preço</h2>
+								<ul>
+									<li>
+										<input type="radio" id="f-preco-0-50" name="f-preco" class="radio">
+										<label for="f-preco-0-50">de R$ 0 até R$ 50</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-preco-51-150" name="f-preco" class="radio">
+										<label for="f-preco-51-150">de R$ 51 até R$ 150</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-preco-151-300" name="f-preco" class="radio">
+										<label for="f-preco-151-300">de R$ 151 até R$ 300</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-preco-301-500" name="f-preco" class="radio">
+										<label for="f-preco-301-500">de R$ 301 até R$ 500</label>
+										<div class="check"></div>
+									</li>
+									<li>
+										<input type="radio" id="f-preco-501+" name="f-preco" class="radio">
+										<label for="f-preco-501+">a partir de R$ 501</label>
+										<div class="check"></div>
+									</li>
+								</ul>
+							</section>
+						</sidebar>
+					</div> <!-- .cont-25 -->
 
-				<content>
-					<div id="id01"></div>
-				</content>
+					<div class="cont-75">
+						<content>
+							<div id="galeria-produtos" class="flex-wrapper"></div>
+							<div class="flex-wrapper">
+								<button onclick="showMore()" class="botao-mais">Carregar Mais</button>
+							</div>
+						</content>
+					</div>
+				</div> <!-- .flex-wrapper -->
 
 			</div> <!-- .site-container -->
 		</main>
 
 		<footer>
-			<div>
-				<span>Profite - CNPJ 05.559.134/0001-60 End: Voluntários da Pátria, 301/702 Botafogo - RJ - 22270-000</span>
+			<div class="site-container">
+				<div class="cont-100 text-center">
+					<span>Profite - CNPJ 05.559.134/0001-60 End: Voluntários da Pátria, 301/702 Botafogo - RJ - 22270-000</span>
+				</div>
 			</div>
 		</footer>
 
 		<script>
-			//var produtos = [
-			//{
-			//"display": "JavaScript Tutorial",
-			//"url": "http://www.w3schools.com/js/default.asp"
-			//},
-			//{
-			//"display": "HTML Tutorial",
-			//"url": "http://www.w3schools.com/html/default.asp"
-			//},
-			//{
-			//"display": "CSS Tutorial",
-			//"url": "http://www.w3schools.com/css/default.asp"
-			//}
-			//]
-
-			/*var xmlhttp = new XMLHttpRequest();
-			var url = "produtos.txt";
-
-			xmlhttp.onreadystatechange = function() {
-				if(xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-					var myArr = JSON.parse(xmlhttp.responseText);
-					callProdutos(myArr);
-				}
-			};
-
-			xmlhttp.open("GET", url, true);
-			xmlhttp.send();
-			
-			function callProdutos(arr) {
-				var out = "";
-				var i;
-				for (i = 0; i < arr.length; i++) {
-					out += '<a href="' + arr[i].url +'">' + arr[i].display + '/></br>';
-				};
-				document.getElementById("id01").innerHTML = out;
-			}*/
-			var xmlhttp = new XMLHttpRequest();
-			var url = "produtos.txt";
-			
-			xmlhttp.onreadystatechange = function() {
-			    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-			        var myArr = JSON.parse(xmlhttp.responseText);
-			        myFunction(myArr);
-			    }
-			};
-			xmlhttp.open("GET", url, true);
-			xmlhttp.send();
-			
-			function myFunction(arr) {
-			    var out = "";
-			    var i;
-			    for(i = 0; i < arr.length; i++) {
-			        out += '<a href="' + arr[i].url + '">' +
-			        arr[i].display + '</a><br>';
-			    }
-			    document.getElementById("id01").innerHTML = out;
-			}
+		/*var xmlhttp = new XMLHttpRequest();
+		var url = "produtos.txt";
+		
+		xmlhttp.onreadystatechange = function() {
+		    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+		        var myArr = JSON.parse(xmlhttp.responseText);
+		        myFunction(myArr);
+		    }
+		};
+		xmlhttp.open("GET", url, true);
+		xmlhttp.send();
+		
+		function myFunction(arr) {
+		    var out = "";
+		    var i;
+		    for(i = 0; i < arr.length; i++) {
+		        out += '<div class="cont-33 produto-wrapper"><div class="produto-image"><img src="images/produtos/' +
+		        arr[i].thumbImage + '.jpg"></div></br><div class="produto-nome"><h3>' +
+		        arr[i].nome + '</h3></br></div><div class="produto-info"><h4>R$ ' +
+		        arr[i].valor + '</h4><span>até ' +
+		        arr[i].vezes + 'x de R$' + 
+		        arr[i].parcela + '</span></div><div class="botao-comprar"><i class="icon-basket"></i></div></div>';
+		    }
+		    document.getElementById("galeria-produtos").innerHTML = out;
+		}*/
 		</script>
 
 	</body>

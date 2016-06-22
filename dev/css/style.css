@@ -1,6 +1,17 @@
+/* --- Fontes --- */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url('../css/fontello.css');
+@font-face {
+	font-family: 'Bell Centennial';
+	src: url('font/ufonts.com_bellcentennialbt-address-opentype.otf');
+}
+@font-face {
+	font-family: 'Baskerville';
+	src: url('font/baskvl.ttf');
+}
 
 /* --- Reset --- */
-html, body, div, nav, header, section, footer, h1, h2, p, span, small, ul, li, a, a:hover, input {
+html, body, div, nav, header, section, footer, h1, h2, h3, h4, h5, h6, p, span, small, ul, li, a, a:hover, input {
 	margin: 0;
 	border: 0;
 	padding: 0;
@@ -16,12 +27,280 @@ html, body, div, nav, header, section, footer, h1, h2, p, span, small, ul, li, a
 	box-sizing: border-box;
 }
 
-.site-container {
+/* --- Geral --- */
+body, header, footer {
 	width: 100vw;
 	background-color: #FFF;
 }
 
-footer {
-	background-color: #000;
+body {
+	font: 1em 'Open Sans', Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Bell Centennial', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+small {
+	font-size: 0.7em;
+	color: #666;
+	text-decoration: underline;
+}
+
+.site-container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.flex-wrapper {
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	-webkit-flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: space-between;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* --- Cabeçalho --- */
+header {
+	padding: 35px 0;
+	border-bottom: 2px solid #ff9f1c;
+}
+
+header .logo-profite{
+	width: 104px;
+	height: 29px;
+}
+
+/* --- Sidebar --- */
+sidebar section {
+	padding-bottom: 45px;
+}
+
+sidebar h2 {
+	padding: 15px 0 30px;
+	font-size: 1.2em;
+}
+
+sidebar ul li {
+	display: block;
+	float: left;
+	width: 100%;
+	height: 1.5em;
+	position: relative;
+	padding: 0;
+	font-size: 0.9em;
+	line-height: 0.6em;
+}
+
+sidebar ul li input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+sidebar ul li label {
+	position: absolute;
+	padding: 5px 20px;
+	z-index: 9;
+}
+
+sidebar ul li .check {
+	display: block;
+	position: absolute;
+	border: 1px solid #d8d8d8;
+	border-radius: 0;
+	height: 15px;
+	width: 15px;
+	top: 2px;
+	z-index: 5;
+}
+
+sidebar ul li:hover .check {
+	border-color: #000;
+}
+
+sidebar ul li .check::before {
+	display: block;
+	position: absolute;
+	content: '';
+	height: 9px;
+	width: 9px;
+	top: 2px;
+	left: 2px;
+	margin: auto;
+	transition: background 0.25s linear;
+	-webkit-transition: background 0.25s linear;
+}
+
+sidebar input[type=radio]:checked ~ .check::before{
+  background: #ff9f1c;
+}
+
+sidebar .f-tamanho ul {
+	width: 65%;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: space-between;
+	-webkit-flex-flow: row wrap;
+	-webkit-justify-content: space-between;
+	-webkit-align-content: space-between;
+}
+
+sidebar .f-tamanho ul li {
+	position: relative;
+	z-index: 8;
+	margin: 0 5px 22px 0;
+	flex: 0 0 30px;
+	-webkit-flex: 0 0 30px;
+}
+
+sidebar .f-tamanho ul li label{
+	position: absolute;
+	color: #d8d8d8;
+	border: 1px solid #d8d8d8;
+	width: 30px;
+	padding: 0.9em 0;
+	text-align: center;
+	z-index: 10;
+}
+
+sidebar .f-tamanho ul li:hover label {
+	border-color: #ff9f1c;
+	color: #000;
+}
+
+/* --- Conteúdo --- */
+main {
+	padding: 40px 0;
+}
+
+.page-title {
+	padding-bottom: 45px;
+}
+
+.page-title h1 {
+	font-size: 1.8em;
+}
+
+.produto-wrapper {
+	margin-bottom: 50px;
+}
+
+.produto-image {
+	max-width: 220px;
+	margin: 0 auto;
+}
+
+.produto-nome {
+	height: 2.7em;
+	padding: 0 45px;
+	text-align: center;
+}
+
+.produto-info {
+	width: calc(100% - 77px);
+	padding: 0 20px;
+	text-align: right;
+	float: left;
+	font-family: 'Baskerville', serif;
+}
+
+.produto-info h4 {
+	font-size: 1.1em;
+}
+
+.produto-info span {
+	font-size: 0.8em;
+}
+
+.botao-comprar {
+	padding-left: 12px;
+	border: none;
+	width: 52px;
+	height: 32px;
+	margin-right: 25px;
 	color: #FFF;
+	font-size: 1.2em;
+	background-color: #ff9f1c;
+	float: right;
+	text-align: center;
+	padding: auto;
+	display: table;
+}
+
+.botao-comprar i {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.botao-comprar:hover, .botao-mais:hover {
+	cursor: pointer;
+	background-color: #d3861d;
+}
+
+.botao-mais {
+	margin: 10px auto 50px;
+	width: 33%;
+	height: 45px;
+	border: none;
+	color: #FFF;
+	background-color: #ff9f1c;
+	text-transform: uppercase;
+	font: 0.8em 'Bell Centennial', sans-serif;
+	letter-spacing: 0.2em;
+
+}
+
+/* --- Rodapé --- */
+footer {
+	padding: 0.9em 0 0.8em;
+	background-color: #000;
+	color: #999;
+	font-size: 0.7em;
+}
+
+/* --- 09. Responsividade --- */
+@media (min-width: 768px) {
+	.cont-100 {
+		flex: 0 0 100%;
+		-webkit-flex: 0 0 100%;
+	}
+	.cont-75 {
+		flex: 0 0 75%;
+		-webkit-flex: 0 0 75%;
+	}
+	.cont-33 {
+		flex: 0 0 33%;
+		-webkit-flex: 0 0 33%;
+	}
+	.cont-25 {
+		flex: 0 0 25%;
+		-webkit-flex: 0 0 25%;
+	}
+}
+
+@media (max-width: 420px) {
+	.sidebar{
+		display: none;
+	}
+	.cont-75 {
+		flex: 0 0 100%;
+		-webkit-flex: 0 0 100%;
+	}
+	.cont-33 {
+		flex: 0 0 50%;
+		-webkit-flex: 0 0 50%;
+	}
 }

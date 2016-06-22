@@ -1,14 +1,74 @@
 [
 {
-"display": "JavaScript Tutorial",
-"url": "http://www.w3schools.com/js/default.asp"
+"codigo": "001",
+"nome": "Bata Bordada",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-1"
 },
 {
-"display": "HTML Tutorial",
-"url": "http://www.w3schools.com/html/default.asp"
+"codigo": "002",
+"nome": "Chapéu de Praia com Fivela",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-2"
 },
 {
-"display": "CSS Tutorial",
-"url": "http://www.w3schools.com/css/default.asp"
+"codigo": "003",
+"nome": "Vestido Texturizado",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-3"
+},
+{
+"codigo": "004",
+"nome": "Bata Bordada",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-4"
+},
+{
+"codigo": "005",
+"nome": "Chapéu de Praia com Fivela",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-5"
+},
+{
+"codigo": "006",
+"nome": "Vestido Texturizado",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-6"
+},
+{
+"codigo": "007",
+"nome": "Bata Bordada",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-7"
+},
+{
+"codigo": "008",
+"nome": "Chapéu de Praia com Fivela",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-8"
+},
+{
+"codigo": "009",
+"nome": "Vestido Texturizado",
+"valor": "398",
+"vezes": "5",
+"parcela": "30,00",
+"thumbImage": "produto-9"
 }
 ]
