@@ -90,7 +90,7 @@
 "thumbImage": "produto-9"
 },
 {
-"codigo": 1,
+"codigo": 10,
 "nome": "Bata Bordada",
 "cor": "cinza",
 "tamanho": "P",
@@ -100,7 +100,7 @@
 "thumbImage": "produto-1"
 },
 {
-"codigo": 2,
+"codigo": 11,
 "nome": "Chapéu de Praia com Fivela",
 "cor": "amarelo",
 "tamanho": "G",
@@ -110,7 +110,7 @@
 "thumbImage": "produto-2"
 },
 {
-"codigo": 3,
+"codigo": 12,
 "nome": "Vestido Texturizado",
 "cor": "azul",
 "tamanho": "G",
@@ -120,7 +120,7 @@
 "thumbImage": "produto-3"
 },
 {
-"codigo": 4,
+"codigo": 13,
 "nome": "Bata Bordada",
 "cor": "cinza",
 "tamanho": "M",
@@ -130,7 +130,7 @@
 "thumbImage": "produto-4"
 },
 {
-"codigo": 5,
+"codigo": 14,
 "nome": "Chapéu de Praia com Fivela",
 "cor": "branco",
 "tamanho": "P",
@@ -140,7 +140,7 @@
 "thumbImage": "produto-5"
 },
 {
-"codigo": 6,
+"codigo": 15,
 "nome": "Vestido Texturizado",
 "cor": "laranja",
 "tamanho": "G",
@@ -150,7 +150,7 @@
 "thumbImage": "produto-6"
 },
 {
-"codigo": 7,
+"codigo": 16,
 "nome": "Bata Bordada",
 "cor": "azul",
 "tamanho": "M",
@@ -160,7 +160,7 @@
 "thumbImage": "produto-7"
 },
 {
-"codigo": 8,
+"codigo": 17,
 "nome": "Chapéu de Praia com Fivela",
 "cor": "laranja",
 "tamanho": "P",
@@ -170,7 +170,187 @@
 "thumbImage": "produto-8"
 },
 {
-"codigo": 9,
+"codigo": 18,
+"nome": "Vestido Texturizado",
+"cor": "branco",
+"tamanho": "M",
+"valor": 1500,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-9"
+},
+{
+"codigo": 19,
+"nome": "Bata Bordada",
+"cor": "cinza",
+"tamanho": "P",
+"valor": 200,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-1"
+},
+{
+"codigo": 20,
+"nome": "Chapéu de Praia com Fivela",
+"cor": "amarelo",
+"tamanho": "G",
+"valor": 29,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-2"
+},
+{
+"codigo": 21,
+"nome": "Vestido Texturizado",
+"cor": "azul",
+"tamanho": "G",
+"valor": 50,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-3"
+},
+{
+"codigo": 22,
+"nome": "Bata Bordada",
+"cor": "cinza",
+"tamanho": "M",
+"valor": 398,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-4"
+},
+{
+"codigo": 23,
+"nome": "Chapéu de Praia com Fivela",
+"cor": "branco",
+"tamanho": "P",
+"valor": 299,
+"vezes": 5,
+"parcela": 30.00,
+"thumbImage": "produto-5"
+},
+{
+"codigo": 24,
+"nome": "Vestido Texturizado",
+"cor": "laranja",
+"tamanho": "G",
+"valor": 499,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-6"
+},
+{
+"codigo": 25,
+"nome": "Bata Bordada",
+"cor": "azul",
+"tamanho": "M",
+"valor": 501,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-7"
+},
+{
+"codigo": 26,
+"nome": "Chapéu de Praia com Fivela",
+"cor": "laranja",
+"tamanho": "P",
+"valor": 155,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-8"
+},
+{
+"codigo": 27,
+"nome": "Vestido Texturizado",
+"cor": "branco",
+"tamanho": "M",
+"valor": 590,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-9"
+},
+{
+"codigo": 28,
+"nome": "Bata Bordada",
+"cor": "cinza",
+"tamanho": "P",
+"valor": 200,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-1"
+},
+{
+"codigo": 29,
+"nome": "Chapéu de Praia com Fivela",
+"cor": "amarelo",
+"tamanho": "G",
+"valor": 29,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-2"
+},
+{
+"codigo": 30,
+"nome": "Vestido Texturizado",
+"cor": "azul",
+"tamanho": "G",
+"valor": 50,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-3"
+},
+{
+"codigo": 31,
+"nome": "Bata Bordada",
+"cor": "cinza",
+"tamanho": "M",
+"valor": 397,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-4"
+},
+{
+"codigo": 32,
+"nome": "Chapéu de Praia com Fivela",
+"cor": "branco",
+"tamanho": "P",
+"valor": 399,
+"vezes": 5,
+"parcela": 30.00,
+"thumbImage": "produto-5"
+},
+{
+"codigo": 33,
+"nome": "Vestido Texturizado",
+"cor": "laranja",
+"tamanho": "G",
+"valor": 499,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-6"
+},
+{
+"codigo": 34,
+"nome": "Bata Bordada",
+"cor": "azul",
+"tamanho": "M",
+"valor": 501,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-7"
+},
+{
+"codigo": 35,
+"nome": "Chapéu de Praia com Fivela",
+"cor": "laranja",
+"tamanho": "P",
+"valor": 65,
+"vezes": 5,
+"parcela": 30,
+"thumbImage": "produto-8"
+},
+{
+"codigo": 36,
 "nome": "Vestido Texturizado",
 "cor": "branco",
 "tamanho": "M",
