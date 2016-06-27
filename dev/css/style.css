@@ -79,6 +79,14 @@ small {
 	float: left;
 }
 
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* --- Cabeçalho --- */
 header {
 	padding: 35px 0 60px;
@@ -96,7 +104,8 @@ header .logo-profite{
 	font-size: 1.2em;
 }
 
-.shop-badge {
+#shop-badge {
+	visibility: hidden;
 	padding: 3px 0;
 	position: absolute;
 	top: 15px;
@@ -170,7 +179,7 @@ sidebar ul li .check::before {
 	-webkit-transition: background 0.25s linear;
 }
 
-sidebar input[type=radio]:checked ~ .check::before{
+sidebar input[type=radio]:checked ~ .check::before {
   background: #ff9f1c;
 }
 
@@ -202,6 +211,11 @@ sidebar .f-tamanho ul li label{
 	padding: 0.9em 0;
 	text-align: center;
 	z-index: 10;
+}
+
+sidebar .f-tamanho input[type=radio]:checked ~ label {
+	color: #000;
+	border-color: #ff9f1c;
 }
 
 sidebar .f-tamanho ul li:hover label {
